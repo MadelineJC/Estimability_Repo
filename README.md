@@ -1,2 +1,21 @@
 # Estimability_Repo
-This repository contains scripts to replicate “Evaluating the estimability of within-host population dynamics models”.
+This repository contains scripts to replicate “**Evaluating the estimability of within-host population dynamics models**”, by Madeline Jarvis-Cross (mjarviscross@ucdavis.edu), Andrew Bateman, Cole Brookson, Nicole Mideo, and Martin Krkošek.
+
+Here, we evaluate the estimability of two generic within-host population dynamics models by assessing: (1) parameter estimation, our ability to recover correct values of model parameters from data, (2) the consequences of mis-assigning the underlying mechanistic model on parameter estimation, and (3) the reproduction of qualitative dynamics, or, our ability to use parameter estimates to reproduce observed dynamical behaviours.
+
+---
+
+To replicate this work:
+
+Clone this repository, and load “`Estimability_Repo.Rproj`”. Running `MasterScript.Rmd` will reproduce the the project in its entirety, and was written as an R Markdown document so as to clearly state and describe purpose, and increase readability. 
+
+`MasterScript.Rmd`:
+
+1. States the focal mechanistic models, and describes their dynamics.
+2. Uses each model to simulate deterministic time series data.
+3. Simulates stochastic time series data.
+4. Beginning on Line 807: Writes `.stan` files to fit the data-generating mechanistic models to the stochastic time series.
+   * Organises time series for use by `RStan`.
+   * Compiles the `.stan` files.
+   * Fits mechanistic models to stochastic time series using `RStan`.
+5. Beginning on Line 2460: Summarises and visualises outputs.
