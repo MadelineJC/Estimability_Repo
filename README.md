@@ -1,7 +1,11 @@
 # Estimability_Repo
 This repository contains scripts to replicate “**Evaluating the estimability of within-host population dynamics models**”, by Madeline Jarvis-Cross (mjarviscross@ucdavis.edu), Andrew Bateman, Cole Brookson, Nicole Mideo, and Martin Krkošek.
 
-Here, we evaluate the estimability of two generic within-host population dynamics models by assessing: (1) parameter estimation, our ability to recover correct values of model parameters from data, (2) the consequences of mis-assigning the underlying mechanistic model on parameter estimation, and (3) the reproduction of qualitative dynamics, or, our ability to use parameter estimates to reproduce observed dynamical behaviours.
+Here, we evaluate the estimability of two generic within-host population dynamics models by assessing: 
+
+1. Parameter estimation, or, our ability to recover correct values of model parameters from data.
+2. The consequences of mis-assigning the underlying mechanistic model on parameter estimation.
+3. The reproduction of qualitative dynamics, or, our ability to use parameter estimates to reproduce observed dynamical behaviours.
 
 ---
 
